@@ -1,0 +1,112 @@
+body {
+  font-family: sans;
+  font-weight: bold;
+  font-size: 15px;
+  color: #4a4d55;
+  margin: auto;
+  width: 100%;
+}
+
+main {
+  border: 1px solid black;
+  height: 500px;
+  padding: 10px;
+  margin-top: 10px;
+  max-width: 720px;
+}
+
+
+.avatar {
+  float: right;
+}
+
+.avatar .avatar-square {
+  background: #ff4a6e;
+  color: white;
+  width: 20px;
+  height: 20px;
+  padding: 15px;
+}
+
+.user-menu {
+  font-size: 80%;
+  z-index: -2;
+  position: relative;
+  clear: both;
+  float: right;
+  margin-top: 20px;
+
+  // contrast would be too low for AA
+  -webkit-box-shadow: 0px 0px 5px .5px rgba(78,78,78,.2);
+  -moz-box-shadow: 0px 0px 5px .5px rgba(78,78,78,.2);
+  box-shadow: 0px 0px 5px .5px rgba(78,78,78,.2);
+}
+
+
+.user-menu ul {
+  list-style-type: none;
+  padding: 0 15px 10px 15px;
+  margin-top: 0;
+}
+
+.user-menu .user-menu-inner {
+  z-index: 0;
+  background: white;
+}
+
+.user-menu .arrow {
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: -1;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 5px .5px rgba(78,78,78,.2);
+  -moz-box-shadow: 0px 0px 5px .5px rgba(78,78,78,.2);
+  box-shadow: 0px 0px 5px .5px rgba(78,78,78,.2);
+}
+
+.user-menu li {
+  padding: 7px;
+}
+
+.user-menu li + li {
+  margin-top: .7em;
+}
+
+.user-menu li img {
+  vertical-align: -60%;
+  width: 27px;
+  padding-right: 5px;
+}
+
+.user-menu li div {
+  display: inline-block; // wraps better on small screen
+}
+
+.user-menu .courses {
+  border-bottom: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.user-menu .create {
+  border-bottom: 1px solid #ddd;
+}
+
+/*
+looks ok without actually
+
+@media (max-width: 200px) {
+  main .avatar {
+    margin-bottom: 20px;
+  }
+
+  main .user-menu {
+    float: none;
+  }
+}
+*/
